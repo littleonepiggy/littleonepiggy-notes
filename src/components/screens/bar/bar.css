@@ -1,0 +1,77 @@
+.bar {
+  min-width: 20%;
+  height: 100%;
+  align-self: flex-start;
+  overflow-y: auto;
+}
+.bar__header h1 {
+  font-weight: 100;
+  font-size: 54px;
+}
+.bar__button--add {
+  width: 90%;
+  max-width: 250px;
+  margin: 10px 0;
+  font-size: 16px;
+  background-color: white;
+  border: 2px solid #eee;
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+
+.note {
+  position: relative;
+  padding: 10px;
+  transition: background-color 0.2s;
+  box-sizing: border-box;
+  min-height: 60.2px;
+  cursor: pointer;
+}
+.note__wrapper {
+  width: calc(100% - 20px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.note::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+.note__delete {
+  opacity: 0;
+  height: 19.2px;
+  width: 20px;
+  position: relative;
+  transition: 0.2s opacity;
+}
+.note__delete span {
+  top: calc(50% - 1px);
+  position: absolute;
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+.note__delete span:first-child {
+  transform: rotate(-45deg);
+}
+.note__delete span:last-child {
+  transform: rotate(45deg);
+}
+
+@media (any-hover: hover) {
+  .note:hover .note__delete {
+    opacity: 1;
+  }
+}
+.selected {
+  background-color: #eee;
+}
+
+.flex {
+  display: flex;
+}/*# sourceMappingURL=bar.css.map */

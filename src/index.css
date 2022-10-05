@@ -1,13 +1,101 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 body {
-
+  height: 100%;
+  padding: 0;
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
 }
 
+
+h1, h2, h3, 
+h4, h5, h6 {
+
+  margin: 0;
+}
+
+.container {
+  
+  position: relative;
+  height: 100%;
+  max-width: 1450px;
+  padding: 0 15px;
+  margin: 0 auto;
+  
+}
+
+
+.layout {
+  
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  height: 100vh;
+
+}
+
+.split {
+
+  height: 100%;
+  display: flex;
+  animation: appear 1s ease;
+  animation-iteration-count: 1;
+  cursor:grab;
+
+}
+
+
+.gutter {
+
+  background-color: #eee;
+}
+
+@media(max-width:692px) {
+  
+  .container {
+
+    padding: 0;
+
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+.button--add {
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  font-size: 16px;
+  background-color: white;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  border-radius: 50px;
+
+}
+
+textarea {
+    
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+.mde-preview, .mde-header {
+  cursor: default;
+}
+
+.mde-preview  {
+  min-height: 90vh !important;
+}
