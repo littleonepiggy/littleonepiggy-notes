@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/littleonepiggy/littleonepiggy-notes/static/css/main.bbdfcff6.css",
-    "main.js": "/littleonepiggy/littleonepiggy-notes/static/js/main.8c3ba757.js",
-    "index.html": "/littleonepiggy/littleonepiggy-notes/index.html",
-    "main.bbdfcff6.css.map": "/littleonepiggy/littleonepiggy-notes/static/css/main.bbdfcff6.css.map",
-    "main.8c3ba757.js.map": "/littleonepiggy/littleonepiggy-notes/static/js/main.8c3ba757.js.map"
+    "main.css": "/littleonepiggy-notes/static/css/main.bbdfcff6.css",
+    "main.js": "/littleonepiggy-notes/static/js/main.8c3ba757.js",
+    "index.html": "/littleonepiggy-notes/index.html",
+    "main.bbdfcff6.css.map": "/littleonepiggy-notes/static/css/main.bbdfcff6.css.map",
+    "main.8c3ba757.js.map": "/littleonepiggy-notes/static/js/main.8c3ba757.js.map"
   },
   "entrypoints": [
     "static/css/main.bbdfcff6.css",
